@@ -14,6 +14,8 @@
 		B2923AF61D4FA0F600BD23E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2923AF41D4FA0F600BD23E8 /* LaunchScreen.storyboard */; };
 		B2923B011D4FA0F600BD23E8 /* CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2923B001D4FA0F600BD23E8 /* CalculatorTests.swift */; };
 		B2923B0C1D4FA0F600BD23E8 /* CalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2923B0B1D4FA0F600BD23E8 /* CalculatorUITests.swift */; };
+		B2923B201D51954700BD23E8 /* haikeiforcalculator.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B2923B1F1D51954700BD23E8 /* haikeiforcalculator.jpg */; };
+		B29BD9761D51D188003DF636 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B29BD9751D51D188003DF636 /* icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		B2923B071D4FA0F600BD23E8 /* CalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2923B0B1D4FA0F600BD23E8 /* CalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorUITests.swift; sourceTree = "<group>"; };
 		B2923B0D1D4FA0F600BD23E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2923B1F1D51954700BD23E8 /* haikeiforcalculator.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = haikeiforcalculator.jpg; sourceTree = "<group>"; };
+		B29BD9751D51D188003DF636 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,8 @@
 		B2923AEA1D4FA0F600BD23E8 /* Calculator */ = {
 			isa = PBXGroup;
 			children = (
+				B29BD9751D51D188003DF636 /* icon.png */,
+				B2923B1F1D51954700BD23E8 /* haikeiforcalculator.jpg */,
 				B2923AEB1D4FA0F600BD23E8 /* AppDelegate.swift */,
 				B2923AED1D4FA0F600BD23E8 /* ViewController.swift */,
 				B2923AEF1D4FA0F600BD23E8 /* Main.storyboard */,
@@ -193,13 +199,17 @@
 				TargetAttributes = {
 					B2923AE71D4FA0F600BD23E8 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = DAYR4G67YX;
+						LastSwiftMigration = 0800;
 					};
 					B2923AFB1D4FA0F600BD23E8 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 						TestTargetID = B2923AE71D4FA0F600BD23E8;
 					};
 					B2923B061D4FA0F600BD23E8 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 						TestTargetID = B2923AE71D4FA0F600BD23E8;
 					};
 				};
@@ -231,6 +241,8 @@
 			files = (
 				B2923AF61D4FA0F600BD23E8 /* LaunchScreen.storyboard in Resources */,
 				B2923AF31D4FA0F600BD23E8 /* Assets.xcassets in Resources */,
+				B2923B201D51954700BD23E8 /* haikeiforcalculator.jpg in Resources */,
+				B29BD9761D51D188003DF636 /* icon.png in Resources */,
 				B2923AF11D4FA0F600BD23E8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -399,10 +411,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Calculator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = lit.Calculator;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yuka.Calculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -410,10 +427,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Calculator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = lit.Calculator;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yuka.Calculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -425,6 +447,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = lit.CalculatorTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Calculator.app/Calculator";
 			};
 			name = Debug;
@@ -437,6 +460,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = lit.CalculatorTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Calculator.app/Calculator";
 			};
 			name = Release;
@@ -448,6 +472,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = lit.CalculatorUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = Calculator;
 			};
 			name = Debug;
@@ -459,6 +484,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = lit.CalculatorUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = Calculator;
 			};
 			name = Release;
@@ -482,6 +508,7 @@
 				B2923B121D4FA0F600BD23E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B2923B131D4FA0F600BD23E8 /* Build configuration list for PBXNativeTarget "CalculatorTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +517,7 @@
 				B2923B151D4FA0F600BD23E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B2923B161D4FA0F600BD23E8 /* Build configuration list for PBXNativeTarget "CalculatorUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +526,7 @@
 				B2923B181D4FA0F600BD23E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
